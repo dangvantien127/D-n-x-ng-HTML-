@@ -42,8 +42,48 @@
             </ul>
           </nav>
           <div class="header-items">
-            <div class="header-item-user">
+            <div class="header-item-user" id="login">
               <span><img src="./assets/icons/1.svg" /></span>
+              <div class="login">
+                <div class="login__content">
+                  <div class="login__title">Login</div>
+                  <div class="login__form">
+                    <div class="login__form-group">
+                      <label for="username">Username:</label>
+                      <input
+                        type="text"
+                        id="username"
+                        name="username"
+                        required
+                      />
+                    </div>
+                    <div class="login__form-group">
+                      <label for="password">Password:</label>
+                      <input
+                        type="password"
+                        id="password"
+                        name="password"
+                        required
+                      />
+                    </div>
+                  </div>
+                  <button class="login__btn" type="submit">Login</button>
+                  <div class="login__social">
+                    <button class="login__fb">
+                      <div class="login__iconfb">
+                        <span><img src="./assets/icons/22.svg" /></span>
+                      </div>
+                      <div class="login__fb-text">Facebook</div>
+                    </button>
+                    <button class="login__gg">
+                      <div class="login__icongg">
+                        <span><img src="./assets/icons/23.svg" /></span>
+                      </div>
+                      <div class="login__gg-text">Google</div>
+                    </button>
+                  </div>
+                </div>
+              </div>
             </div>
             <div class="header-item-user">
               <span><img src="./assets/icons/2.svg" /></span>
@@ -52,7 +92,9 @@
               <span><img src="./assets/icons/3.svg" /></span>
             </div>
             <div class="header-item-user">
-              <span><img src="./assets/icons/4.svg" /></span>
+              <span
+                ><a href="cart.html"><img src="./assets/icons/4.svg" /></a
+              ></span>
             </div>
           </div>
         </div>
