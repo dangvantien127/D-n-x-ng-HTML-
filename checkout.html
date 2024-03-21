@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://necolas.github.io/normalize.css/8.0.1/normalize.css"
+    />
+    <link rel="stylesheet" href="./style.scss" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header-inner">
+          <a href="" class="header__logo">
+            <img src="./assets/logo.svg" alt="" />
+          </a>
+          <div class="button-mobile"><button>=</button></div>
+          <nav class="main-menu">
+            <ul class="main-menu__list">
+              <li class="main-menu__item">
+                <a href="" class="main-menu__link">Home</a>
+              </li>
+              <li class="main-menu__item">
+                <a href="./shop.html" class="main-menu__link">Shop</a>
+              </li>
+              <li class="main-menu__item">
+                <a href="" class="main-menu__link">About</a>
+              </li>
+              <li class="main-menu__item">
+                <a href="" class="main-menu__link">Contact</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="header-items">
+            <div class="header-item-user">
+              <span><img src="./assets/icons/1.svg" /></span>
+            </div>
+            <div class="header-item-user">
+              <span><img src="./assets/icons/2.svg" /></span>
+            </div>
+            <div class="header-item-user">
+              <span><img src="./assets/icons/3.svg" /></span>
+            </div>
+            <div class="header-item-user">
+              <span><img src="./assets/icons/4.svg" /></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section class="banner">
+      <img
+        src="https://picsum.photos/id/10/1440/500"
+        alt=""
+        class="banner__img"
+      />
+    </section>
+    <!--End .banner-->
+    <section class="checkout">
+      <div class="container">
+        <div class="checkout__content">
+          <div class="checkout__billing">
+            <h1>Billing details</h1>
+            <form id="myForm">
+              <div class="checkout__name">
+                <div class="checkout__name-f">
+                  <label for="firstName">First Name</label>
+                  <input type="text" id="firstName" name="firstName" required />
+                </div>
+
+                <div class="checkout__name-l">
+                  <label for="lastName">Last Name</label>
+                  <input type="text" id="lastName" name="lastName" required />
+                </div>
+              </div>
+
+              <label for="companyName">Company Name (Optional)</label>
+              <input type="text" id="companyName" name="companyName" />
+
+              <label for="country">Country/Region</label>
+              <select id="country" name="country" required>
+                <option value="">Việt Nam</option>
+                <option value="USA">United States</option>
+                <option value="UK">United Kingdom</option>
+                <!-- Add more options as needed -->
+              </select>
+
+              <label for="streetAddress">Street Address</label>
+              <input
+                type="text"
+                id="streetAddress"
+                name="streetAddress"
+                required
+              />
+
+              <label for="townCity">Town/City</label>
+              <input type="text" id="townCity" name="townCity" required />
+
+              <label for="province">Province</label>
+              <select id="province" name="province" required>
+                <option value="">Hà Nội</option>
+                <option value="">Hồ Chí Minh</option>
+                <option value="">Nam Định</option>
+                <option value="">Hải Phòng</option>
+                <!-- Add options based on the selected country -->
+              </select>
+
+              <label for="zipCode">ZIP Code</label>
+              <input type="text" id="zipCode" name="zipCode" required />
+
+              <label for="phone">Phone</label>
+              <input type="text" id="phone" name="phone" required />
+
+              <label for="email">Email Address</label>
+              <input type="email" id="email" name="email" required />
+
+              <label for="email"></label>
+              <input
+                type="text"
+                id="addinfo"
+                name="addinfo"
+                placeholder="Additional information"
+                required
+              />
+            </form>
+          </div>
+          <div class="checkout__bank">
+            <div class="checkout__pay">
+              <div class="checkout__pay-pro">
+                <table>
+                  <thead>
+                    <tr>
+                      <td>Product</td>
+                      <td>Subtotal</td>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Asgaard sofa</td>
+                      <td>25.000.000đ</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="checkout__pay-tot">
+                <div class="checkout__pay-name">Total</div>
+                <div class="checkout__pay-money">25.000.000đ</div>
+              </div>
+              <hr class="checkout__pay-br" />
+              <div class="checkout__pay-form1">
+                <input
+                  type="radio"
+                  id="option1"
+                  name="options"
+                  value="option1"
+                />
+                <label for="option1">Direct Bank Transfer</label><br />
+              </div>
+              <div class="checkout__pay-form2">
+                <input
+                  type="radio"
+                  id="option2"
+                  name="options"
+                  value="option2"
+                />
+                <label for="option2">Cash On Delivery</label><br />
+              </div>
+              <div class="checkout__pay-policy">
+                Your personal data will be used to support your experience
+                throughout this website, to manage access to your account, and
+                for other purposes described in our
+                <a href="">privacy policy</a>.
+              </div>
+              <button class="checkout__pay-btn">Place order</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="services">
+      <div class="container-fluid">
+        <div class="service-list">
+          <div class="service-item">
+            <img src="./assets/icons/10.svg" class="service__image" />
+            <div class="service-info">
+              <h4 class="service__name">High Quality</h4>
+              <p class="service__description">Crafted from top materials</p>
+            </div>
+          </div>
+          <!--End service-item-->
+          <div class="service-item">
+            <img src="./assets/icons/11.svg" class="service__image" />
+            <div class="service-info">
+              <h4 class="service__name">Warranty Protection</h4>
+              <p class="service__description">Over 2 years</p>
+            </div>
+          </div>
+          <!--End service-item-->
+          <div class="service-item">
+            <img src="./assets/icons/12.svg" class="service__image" />
+            <div class="service-info">
+              <h4 class="service__name">Free Shipping</h4>
+              <p class="service__description">Order over 150 $</p>
+            </div>
+          </div>
+          <!--End service-item-->
+          <div class="service-item">
+            <img src="./assets/icons/13.svg" class="service__image" />
+            <div class="service-info">
+              <h4 class="service__name">24 / 7 Support</h4>
+              <p class="service__description">Dedicated support</p>
+            </div>
+          </div>
+          <!--End service-item-->
+        </div>
+      </div>
+    </section>
+    <!--End .services-->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-list">
+          <div class="footer-item">
+            <img src="./assets/logo.svg" alt="" />
+            <p class="footer__address">
+              400 University Drive Suite 200 Coral Gables, FL 33134 USA
+            </p>
+          </div>
+          <div class="footer-nav">
+            <div class="footer-item">
+              <h2 class="footer__title">Links</h2>
+              <ul class="footer-menu-list">
+                <li class="footer-menu-item">
+                  <a href="" class="footer-menu-link">Home</a>
+                </li>
+                <li class="footer-menu-item">
+                  <a href="" class="footer-menu-link">Shop</a>
+                </li>
+                <li class="footer-menu-item">
+                  <a href="" class="footer-menu-link">Blog</a>
+                </li>
+                <li class="footer-menu-item">
+                  <a href="" class="footer-menu-link">Contact</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer-item">
+              <h2 class="footer__title">Help</h2>
+              <ul class="footer-menu-list">
+                <li class="footer-menu-item">
+                  <a href="" class="footer-menu-link">Payment Options</a>
+                </li>
+                <li class="footer-menu-item">
+                  <a href="" class="footer-menu-link">Returns</a>
+                </li>
+                <li class="footer-menu-item">
+                  <a href="" class="footer-menu-link">Privacy Policies</a>
+                </li>
+                <li class="footer-menu-item">
+                  <a href="" class="footer-menu-link">Contact</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer-item">
+            <h2 class="footer__title">Newsletter</h2>
+            <form action="" class="newsletter">
+              <input
+                type="text"
+                class="newsletter__input"
+                placeholder="Enter Your Email Address"
+              />
+              <button class="newsletter__btn">Subscribe</button>
+            </form>
+          </div>
+        </div>
+        <p class="copyright">2023 furino. All rights reverved</p>
+      </div>
+    </footer>
+  </body>
+</html>
